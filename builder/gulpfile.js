@@ -27,7 +27,11 @@ const gulp = require('gulp'),
             gulp_uglify=require('gulp-uglify'),
 
             // IMAGES
-            gulp_imagemin=require('gulp-imagemin');
+            gulp_imagemin=require('gulp-imagemin'),
+
+
+            // SHELL
+            gulp_shell = require('gulp-shell');
 
 
 // INIT
@@ -44,10 +48,11 @@ const gulp = require('gulp'),
 
   }));
 
-function gulp_reload(done) {
-    gulp_browsersync.reload()
-    done();
-}
+
+  function gulp_reload(done) {
+      gulp_browsersync.reload()
+      done();
+  }
 
   // WATCH FILES CHANGE
   function watch() {
@@ -112,13 +117,13 @@ function clean() {
         return gulp.src(config.src+'views/*.html')
         .pipe(gulp.dest(config.dist))
         .pipe(gulp_notify('HTML updated'))
-        .pipe(pages());  
+        .pipe(pages());
     }
-    
+
     function pages() {
         return gulp.src(config.src+'views/pages/**.html')
         .pipe(gulp.dest(config.dist+"/pages"))
-        .pipe(gulp_notify('Pages has been updated'));  
+        .pipe(gulp_notify('Pages has been updated'));
     }
 
     function js() {
@@ -135,4 +140,3 @@ function clean() {
         .pipe(gulp.dest(config.assets+'js/'))
         .pipe(gulp_notify('JS compiled'));
   }
-
