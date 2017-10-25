@@ -1,0 +1,7 @@
+@mixin topPer($value){
+  top: calc(#{$value}/667*100%);
+}
+
+@mixin leftPer($value){
+  left: calc(#{$value}/375*100%);
+}
