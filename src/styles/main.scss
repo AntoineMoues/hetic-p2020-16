@@ -13,4 +13,6 @@
 //pages
 @import './components/background.scss';
 @import "components/_index.scss";
-@import 'pages/_home.scss';
+@import 'pages/home';
+@import 'pages/sections/landing';
+@import 'pages/sections/slider';
