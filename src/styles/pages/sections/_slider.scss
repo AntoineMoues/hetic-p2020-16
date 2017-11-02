@@ -1,8 +1,10 @@
 .home-slider{
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 
   &__slides{
     margin-top: 17%;
@@ -85,7 +87,7 @@
     margin-top: auto;
 
     .arrow{
-      margin-left: 49%;  
+      margin-left: 49%;
     }
 
     &-text{
@@ -97,5 +99,16 @@
       font-weight: 900;
     }
 
+  }
+
+  &__content{
+    position: absolute;
+    width: 100vw;
+    top: 100%;
+
+    .contain{
+      width: 89%;
+      height: 100%;
+    }
   }
 }
