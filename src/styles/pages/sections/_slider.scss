@@ -1,6 +1,8 @@
 .home-slider{
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   &__slides{
     margin-top: 17%;
@@ -76,5 +78,24 @@
     &:last-child:after{
       display: none;
     }
+  }
+
+
+  &__scroll{
+    margin-top: auto;
+
+    .arrow{
+      margin-left: 49%;  
+    }
+
+    &-text{
+      color: $white;
+      text-align: center;
+      font-family: 'Avenir', 'sans-serif';
+      font-size: 0.875rem;
+      line-height: 1.2rem;
+      font-weight: 900;
+    }
+
   }
 }
