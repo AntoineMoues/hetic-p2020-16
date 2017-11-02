@@ -7,6 +7,7 @@ class Box{
     this.$elements.$scrollListener = this.$elements.$container.querySelector('.home-slider__scroll')
     this.$elements.$box = this.$elements.$container.querySelector('.home-slider__content')
     this.$elements.$close = this.$elements.$container.querySelector('.home-slider__content .box__title span')
+    this.$elements.$open = this.$elements.$container.querySelector('.home-slider__scroll .arrow-up')
 
     this.classes = new Object()
     this.classes.boxActive = 'home-slider__content-active'
@@ -22,6 +23,10 @@ class Box{
 
     this.$elements.$close.addEventListener('click', () => {
       this.closeBox()
+    })
+
+    this.$elements.$open.addEventListener('click', () => {
+      this.openBox()
     })
   }
   openBox(){
