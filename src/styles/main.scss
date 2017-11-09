@@ -9,6 +9,7 @@
 @import "tools/base";
 @import 'tools/fonts';
 @import 'tools/typography';
+@import 'tools/animations';
 
 //pages
 @import 'components/icons';
@@ -18,3 +19,9 @@
 @import 'pages/home';
 @import 'pages/sections/landing';
 @import 'pages/sections/slider';
+@import 'pages/sections/introduction';
+@import 'pages/sections/box';
+@import 'pages/sections/dial';
+@import 'pages/sections/push';
+@import 'pages/sections/history';
+@import 'pages/sections/colors';

@@ -6,3 +6,22 @@ h1{
   font-family: 'Playfair', 'sans-serif';
   font-weight: 500;
 }
+
+.underline{
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: $teak;
+    top: 100%;
+    left: 0;
+  }
+}
+
+h2{
+  font-size: 1.5rem;
+  color: $white;
+}

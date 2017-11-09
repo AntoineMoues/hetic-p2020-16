@@ -1,0 +1,22 @@
+@keyframes appearing-up{
+  0% { transform: translateY(40px); opacity: 0;}
+  100% { transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes appearing-no-transform{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+
+@keyframes appearing-down{
+  0% { transform: translateY(-40px); opacity: 0;}
+  100% { transform: translateY(0px); opacity: 1;}
+}
+
+.appeared{
+  animation: appearing-up 1.3s ease forwards;
+}
+
+.hidden{
+  opacity: 0;
+}

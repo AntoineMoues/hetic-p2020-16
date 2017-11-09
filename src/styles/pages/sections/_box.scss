@@ -1,0 +1,64 @@
+.box{
+  width: 100vw;
+  height: 100vh;
+
+  &__image{
+
+    &-container{
+      height: 53%;
+      position: relative;
+      margin-top: 5%;
+    }
+
+    &-content{
+      max-height: 100%;
+      position: absolute;
+      left: -35%;
+    }
+  }
+
+  &__description{
+    height: 42%;
+
+    &-container{
+      height: 100%;
+      padding: $container-layout;
+    }
+  }
+
+  &__titling{
+
+    h2{
+
+      &:after{
+        top: 120%;
+      }
+    }
+
+    p{
+      font-size: 0.75rem;
+      color: $white;
+      margin-top: 14px;
+      max-width: 77%;
+      font-family: 'Avenir-Roman', sans-serif;
+      line-height: 1.15rem;
+    }
+
+  }
+
+  &__listing{
+    margin-top: 20%;
+
+    &-title{
+      color: $aluminium;
+      margin-bottom: 11px;
+      font-family: 'Avenir', sans-serif;
+      font-size: 0.875rem;
+    }
+
+    &-info{
+      color: $white;
+      float: right;
+    }
+  }
+}

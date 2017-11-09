@@ -1,0 +1,31 @@
+.push{
+  width: 100vw;
+  height: 100vh;
+
+  &__image{
+    padding-top: 22vh;
+  }
+
+  &__description{
+
+    &-container{
+      padding: $container-layout;
+
+      h2{
+
+        &:after{
+          top: 140%;
+        }
+      }
+
+      p{
+        font-size: 0.75rem;
+        color: $white;
+        margin-top: 20px;
+        max-width: 77%;
+        font-family: 'Avenir-Roman', sans-serif;
+        line-height: 1.15rem;
+      }
+    }
+  }
+}

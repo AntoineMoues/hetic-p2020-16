@@ -1,0 +1,41 @@
+.introduction{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__title{
+    font-size: 2rem;
+    color: $white;
+    margin-top: 18%;
+    max-width: 57%;
+    margin-left: 15%;
+    animation: appearing-up 1.3s 0s ease;
+  }
+
+  &__image{
+    max-height: 46%;
+    max-width: 150%;
+    margin-top: 20px;
+    position: absolute;
+    left: -19%;
+    opacity: 0;
+    animation: appearing-no-transform 1.3s 1.3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &__scroll{
+    margin-top: auto;
+    text-transform: uppercase;
+    color: $boulder;
+    font-size: 0.625rem;
+    text-align: center;
+    font-family: 'Avenir', 'sans-serif';
+    font-weight: bold;
+    padding-bottom: 5%;
+    opacity: 0;
+    animation: appearing-down 1.3s 1.3s ease;
+    animation-fill-mode: forwards;
+  }
+}

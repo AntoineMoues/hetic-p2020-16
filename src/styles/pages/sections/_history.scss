@@ -1,0 +1,46 @@
+.history{
+  width: 100vw;
+  height: 100vh;
+
+  &__background{
+    background-image: url('../img/histoire.png');
+    width: 100%;
+    height: 46vh;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      display: block;
+      background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__description{
+    padding-top: 2vh;
+
+    &-container{
+      padding: $container-layout;
+
+      h2{
+
+        &:after{
+          top: 140%;
+        }
+      }
+
+      p{
+        font-size: 0.75rem;
+        color: $white;
+        margin-top: 20px;
+        font-family: 'Avenir-Roman', sans-serif;
+        line-height: 1.15rem;
+      }
+    }
+  }
+}

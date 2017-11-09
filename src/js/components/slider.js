@@ -19,13 +19,13 @@ class Slider{
     let slideSwipes = new Hammer(this.$elements.$slideContainer)
 
     slideSwipes.on('panleft', e => {
-      if(this.index - 1 >= 0  && this.swiped == false)
-        this.goToSlide(this.index--)
+      if(this.index + 1 <= this.quantities && this.swiped == false)
+        this.goToSlide(this.index++)
     })
 
     slideSwipes.on('panright', e => {
-      if(this.index + 1 <= this.quantities && this.swiped == false)
-        this.goToSlide(this.index++)
+      if(this.index - 1 >= 0  && this.swiped == false)
+        this.goToSlide(this.index--)
     })
   }
   goToSlide(index){
