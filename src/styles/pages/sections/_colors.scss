@@ -13,22 +13,22 @@
     width: 1.5vh;
     border-radius: 50%;
     border: 1px solid $white;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin-left: 10vw;
 
-    &-active div{
-      display: block;
-    }
-
     div{
       width: 1vh;
-      height: 1vh;
+      height: 0.9vh;
       border-radius: 50%;
       background-color: $white;
       display: none;
-      left: 50%;
-      top: 50%;
+    }
+
+    &--active div{
+      display: block;
     }
 
     &:first-child{
@@ -53,5 +53,79 @@
       height: 1px;
       background-color: $white;
     }
+  }
+
+  &__images{
+    position: relative;
+    margin-top: 19vh;
+    height: 30vh;
+  }
+
+  &__image{
+    position: absolute;
+    height: 55vw;
+    left: 29.5%;
+  }
+
+  &__imageContainer{
+    opacity: 0;
+
+    &-active{
+      opacity: 1;
+    }
+  }
+
+  &__diamond{
+    display: block;
+    margin: auto;
+    width: 13vw;
+    height: 13vw;
+    transform: rotate(45deg);
+    background-color: $black-solid;
+    border: 3px solid $white;
+    transform-origin: center;
+  }
+
+  &__number{
+    color: $white;
+    transform: rotate(-45deg);
+    text-align: center;
+    height: 100%;
+    font-size: 1.125rem;
+    font-family: 'Avenir', sans-serif;
+    margin: 4vw 8vw;
+  }
+
+  &__texts{
+    margin-top: 4vh;
+    height: 25vh;
+    position: relative;
+
+  }
+
+  &__textContainer{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    padding: 0 7%;
+    width: 100%;
+
+    &--active{
+      opacity: 1;
+    }
+  }
+
+  &__wrapper{
+    height: 50%;
+    overflow-y: hidden;
+  }
+
+  &__text{
+    transform: translateY(100%);
+    color: $white;
+    height: 100%;
+    font-size: 5.5rem;
+    font-family: 'Playfair Display';
+    font-weight: 700;
   }
 }
