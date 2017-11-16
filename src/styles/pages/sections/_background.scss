@@ -5,6 +5,7 @@
   z-index: 0;
 
   &__vertical{
+    transition: $transition;
     position: absolute;
     top: 0;
     width: 1px;
@@ -33,6 +34,7 @@
   }
 
   &__diagonal{
+    transition: $transition;
     position: absolute;
     height: 1px;
     width: 140vw;
@@ -53,6 +55,7 @@
   }
 
   &__circle{
+    transition: $transition;
     position: absolute;
     border-radius: 50%;
     margin: auto;

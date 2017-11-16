@@ -7,3 +7,8 @@ html, body {
 body {
   overflow-x: hidden;
 }
+
+.opacity{
+  opacity: 0;
+  transition: $transition;
+}
