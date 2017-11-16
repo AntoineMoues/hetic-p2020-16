@@ -3,3 +3,7 @@ html, body {
     height: 100%;
     background: $black-solid;
 }
+
+body {
+  overflow-x: hidden;
+}
