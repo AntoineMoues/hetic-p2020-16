@@ -12,3 +12,11 @@ body {
   opacity: 0;
   transition: $transition;
 }
+
+.appeared{
+  animation: appearing-up 1.3s ease forwards;
+}
+
+.hidden{
+  opacity: 0;
+}

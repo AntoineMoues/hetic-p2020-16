@@ -11,25 +11,32 @@
     width: 1px;
     height: 100vh;
     background-color: $mikado;
+    transform: translateY(-100%);
+    animation: vertical-line 0.3s ease forwards;
 
     &1{
       @include leftPer(27)
+      animation-delay: 0s;
     }
 
     &2{
       @include leftPer(93)
+      animation-delay: 0.3s;
     }
 
     &3{
       @include leftPer(187)
+      animation-delay: 0.6s;
     }
 
     &4{
       @include leftPer(281)
+      animation-delay: 0.9s;
     }
 
     &5{
       @include leftPer(347)
+      animation-delay: 1.2s;
     }
   }
 
@@ -37,20 +44,23 @@
     transition: $transition;
     position: absolute;
     height: 1px;
-    width: 140vw;
+    width: 0vw;
     background-color: $mikado;
     transform-origin: left;
+    animation: diagonal-line 0.5s ease forwards;
 
     &1{
       left: 0;
       @include topPer(91)
       transform: rotate(45deg);
+      animation-delay: 2s;
     }
 
     &2{
       left: 100%;
       @include topPer(91)
       transform: rotate(135deg);
+      animation-delay: 2s;
     }
   }
 
@@ -59,13 +69,16 @@
     position: absolute;
     border-radius: 50%;
     margin: auto;
+    transform: scale(0);
     border: 1px solid $mikado;
+    animation: circle 0.5s ease forwards;
 
     &1{
       @include topPer(147);
       @include leftPer(58);
       width: 68vw;
       height: 68vw;
+      animation-delay: 1.5s;
     }
 
     &2{
@@ -73,6 +86,7 @@
       @include leftPer(27);
       width: 85vw;
       height: 85vw;
+      animation-delay: 1.5s;
     }
 
     &3{
@@ -80,6 +94,7 @@
       @include leftPer(16);
       width: 91vw;
       height: 91vw;
+      animation-delay: 1.5s;
     }
   }
 }
