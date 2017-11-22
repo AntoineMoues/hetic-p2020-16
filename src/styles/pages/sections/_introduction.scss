@@ -14,6 +14,10 @@
     animation: appearing-up 1.3s 0s ease;
   }
 
+  &__imageContainer{
+    overflow: hidden;
+  }
+
   &__image{
     max-height: 46%;
     max-width: 150%;
@@ -21,7 +25,7 @@
     position: absolute;
     left: -19%;
     opacity: 0;
-    animation: appearing-no-transform 1.3s 1.3s ease;
+    animation: appearing-no-transform 1.3s 2.3s ease;
     animation-fill-mode: forwards;
   }
 

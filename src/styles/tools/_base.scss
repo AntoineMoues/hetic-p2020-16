@@ -3,3 +3,20 @@ html, body {
     height: 100%;
     background: $black-solid;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.opacity{
+  opacity: 0;
+  transition: $transition;
+}
+
+.appeared{
+  animation: appearing-up 1.3s ease forwards;
+}
+
+.hidden{
+  opacity: 0;
+}
