@@ -23,26 +23,26 @@
     }
   }
 
-  &__description{
-    padding-top: 2vh;
+  &__descriptionContainer{
+    padding: $container-layout;
 
-    &-container{
-      padding: $container-layout;
+    h2{
 
-      h2{
-
-        &:after{
-          top: 140%;
-        }
-      }
-
-      p{
-        font-size: $p;
-        color: $white;
-        margin-top: 20px;
-        font-family: 'Avenir-Roman', sans-serif;
-        line-height: 1.15rem;
+      &:after{
+        top: 140%;
       }
     }
+
+    p{
+      font-size: $p;
+      color: $white;
+      margin-top: 20px;
+      font-family: 'Avenir-Roman', sans-serif;
+      line-height: 1.15rem;
+    }
+  }
+
+  &__description{
+    padding-top: 2vh;
   }
 }

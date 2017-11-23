@@ -2,16 +2,14 @@
   width: 100vw;
   height: 100vh;
 
+  &__imageContainer{
+    height: 53%;
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden;
+  }
+
   &__image{
-
-    &-container{
-      height: 53%;
-      position: relative;
-      margin-top: 5%;
-      overflow: hidden;
-    }
-
-    &-content{
       max-height: 100%;
       position: absolute;
       left: -35%;
@@ -23,16 +21,15 @@
       @include responsive($sm){
         left: 0;
       }
-    }
   }
 
   &__description{
     height: 42%;
+  }
 
-    &-container{
-      height: 100%;
-      padding: $container-layout;
-    }
+  &__descriptionContainer{
+    height: 100%;
+    padding: $container-layout;
   }
 
   &__titling{
@@ -57,17 +54,17 @@
 
   &__listing{
     margin-top: 20%;
+  }
 
-    &-title{
-      color: $aluminium;
-      margin-bottom: 11px;
-      font-family: 'Avenir', sans-serif;
-      font-size: 0.875rem;
-    }
+  &__title{
+    color: $aluminium;
+    margin-bottom: 11px;
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.875rem;
+  }
 
-    &-info{
-      color: $white;
-      float: right;
-    }
+  &__info{
+    color: $white;
+    float: right;
   }
 }

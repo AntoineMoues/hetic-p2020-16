@@ -17,25 +17,25 @@
   &__description{
     margin-top: auto;
     margin-bottom: 20%;
+  }
 
-    &-container{
-      padding: $container-layout;
+  &__descriptionContainer{
+    padding: $container-layout;
 
-      h2{
+    h2{
 
-        &:after{
-          top: 140%;
-        }
+      &:after{
+        top: 140%;
       }
+    }
 
-      p{
-        font-size: $p;
-        color: $white;
-        margin-top: 20px;
-        max-width: 77%;
-        font-family: 'Avenir-Roman', sans-serif;
-        line-height: 1.15rem;
-      }
+    p{
+      font-size: $p;
+      color: $white;
+      margin-top: 20px;
+      max-width: 77%;
+      font-family: 'Avenir-Roman', sans-serif;
+      line-height: 1.15rem;
     }
   }
 }

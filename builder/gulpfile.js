@@ -30,7 +30,7 @@ const gulp = require('gulp'),
             gulp_pug = require('gulp-pug'),
 
             // IMAGES
-            gulp_imagemin=require('gulp-imagemin'),
+            gulp_imagemin = require('gulp-imagemin'),
 
 
             // SHELL
@@ -149,4 +149,16 @@ function clean() {
         .pipe(gulp_rename('main.min.js'))
         .pipe(gulp.dest(config.assets+'js/'))
         .pipe(gulp_notify('JS compiled'));
+  }
+
+  function critical() {
+    gulp_critical.generate({
+        inline: true,
+        base: config.dist,
+        src: 'index.html',
+        dest: config.dist + 'index.html',
+        minify: true,
+        width: 320,
+        height: 480
+    })
   }
