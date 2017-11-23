@@ -1,7 +1,7 @@
 <h1 align="center">Audemars Piguet</h1>
 <h3 align="center">Hetic P2020 Equipe 16</h3>
 
-![Audemars Piguet](http://url/to/img.png)
+![Audemars Piguet](/docs/desktop-Landing.jpg)
 
 ## Overview 🔎
 
@@ -10,25 +10,34 @@
 
 Come visit website [here](https://antoinemoues.github.io/hetic-p2020-16/)
 
-## Requirements
+## Requirements 📦
 
-- Node.js v6.11.1
-- Gulp v4.0
-- npm v3.10.10
+- [Node.js](https://nodejs.org/en/) v6.11.1
+- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) v4.0
+- [npm](https://www.npmjs.com/) v3.10.10
 
-## Installation
+## Installation 🛠
 
-```
+```sh
+# Clone project
+git clone https://github.com/AntoineMoues/hetic-p2020-16.git
+
+# Go to folder
+cd hetic-p2020-16
+
+# Install dependencies
 npm run install
 ```
 
-## Modify the project
+## Modify the project 🛠
 
 ```
 npm run dev
 ```
 
-## Deployment
+## Deployment 🚀
+
+Dist folder is versioned to allow us to use **GitHub Pages**.
 
 ```
 npm run deploy
@@ -42,3 +51,14 @@ npm run deploy
 - Antoine Mouës
 - Paul Perrier
 - Charlotte Siess
+
+## Documentation 📝
+
+### Conventions
+
+- Git
+  - [Gitmoji](https://gitmoji.carloscuesta.me/)
+- CSS
+  - Naming convention : [BEM : Block Element Modifier](http://getbem.com/)
+- JS
+  - Javascript standard style : [Standard JS](https://standardjs.com/)
