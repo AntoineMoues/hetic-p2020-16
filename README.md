@@ -1,4 +1,4 @@
-## New project
+<!-- ## New project
 
 [URL](https://antoinemoues.github.io/hetic-p2020-16/)
 
@@ -26,4 +26,19 @@ In root folder, run
 
 ```
 gulp deploy
-```
+``` -->
+
+# Audemars Piguet
+
+## Overview
+
+## Installation
+
+## Team
+
+- Emile Abraham
+- Aymerick Hoareau
+- Charles Morey
+- Antoine Mouës
+- Paul Perrier
+- Charlotte Siess 
