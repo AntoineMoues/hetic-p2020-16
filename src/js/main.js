@@ -1,6 +1,7 @@
 const ScrollAppearing = require('./components/scrollappearing')
 const Appear = require('./components/appear')
 const Carousel = require('./components/carousel')
+const Orientation = require('./components/orientation')
 
 
 /**
@@ -31,5 +32,17 @@ const appearing = new Appear({
  * @instance Carousel
  */
 const slider = new Carousel({
-  $container: document.querySelector('.colors')
+  $container : document.querySelector('.colors')
 })
+
+
+if (window.DeviceOrientationEvent) {
+  /**
+   * @const
+   * @name moving
+   * @instance Orientation
+   */
+  const moving = new Orientation({
+    $element : document.querySelector('.push__image')
+  })
+}
