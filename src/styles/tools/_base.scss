@@ -20,3 +20,17 @@ body {
 .hidden{
   opacity: 0;
 }
+
+.description{
+  max-width: 77%;
+  font-size: $p;
+  color: $white;
+  font-family: 'Avenir-Roman', sans-serif;
+  line-height: 1.5;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

@@ -1,49 +1,5 @@
-@font-face {
-	font-family: 'Avenir';
-	src: url('/assets/fonts/Avenir-Black.eot');
-	src: url('/assets/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Avenir-Black.woff') format('woff'),
-		url('/assets/fonts/Avenir-Black.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Avenir';
-	src: url('/assets/fonts/Avenir-Oblique.eot');
-	src: url('/assets/fonts/Avenir-Oblique.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Avenir-Oblique.woff') format('woff'),
-		url('/assets/fonts/Avenir-Oblique.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Avenir';
-	src: url('/assets/fonts/Avenir-Heavy.eot');
-	src: url('/assets/fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Avenir-Heavy.woff') format('woff'),
-		url('/assets/fonts/Avenir-Heavy.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Avenir';
-	src: url('/assets/fonts/Avenir-Medium.eot');
-	src: url('/assets/fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Avenir-Medium.woff') format('woff'),
-		url('/assets/fonts/Avenir-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Avenir-Roman';
-	src: url('/assets/fonts/Avenir-Roman.eot');
-	src: url('/assets/fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/Avenir-Roman.woff') format('woff'),
-		url('/assets/fonts/Avenir-Roman.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+@include font-face('Avenir', '/assets/fonts/Avenir-Black', 900, normal, eot woff truetype);
+@include font-face('Avenir', '/assets/fonts/Avenir-Oblique', normal, italic, eot woff truetype);
+@include font-face('Avenir', '/assets/fonts/Avenir-Heavy', 900, normal, eot woff truetype);
+@include font-face('Avenir', '/assets/fonts/Avenir-Medium', 500, normal, eot woff truetype);
+@include font-face('Avenir-Roman', '/assets/fonts/Avenir-Roman', normal, normal, eot woff truetype);

@@ -8,7 +8,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('../img/cadran.png');
+    background-image: url('../img/dial.png');
     background-position: center;
     background-size: cover;
     opacity: 0.6;
@@ -21,21 +21,16 @@
 
   &__descriptionContainer{
     padding: $container-layout;
+  }
 
-    h2{
+  &__headTitle{
 
-      &:after{
-        top: 140%;
-      }
+    &:after{
+      top: 140%;
     }
+  }
 
-    p{
-      margin-top: 20px;
-      max-width: 77%;
-      font-size: $p;
-      color: $white;
-      font-family: 'Avenir-Roman', sans-serif;
-      line-height: 1.15rem;
-    }
+  &__headDescription{
+    margin-top: 20px;
   }
 }
