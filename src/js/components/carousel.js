@@ -10,6 +10,7 @@ class Carousel{
     this.$diamond = document.querySelector('.colors__diamond')
     this.$diamondText = document.querySelector('.colors__number')
     this.$texts = document.querySelectorAll('.colors__textContainer')
+    this.$text = document.querySelectorAll('.colors__text')
 
     this.quantity = this.$images.length
     this.swiped = false
@@ -61,6 +62,10 @@ class Carousel{
 
     document.querySelector('.colors__textContainer--active').classList.remove('colors__textContainer--active')
     this.$texts[this.index].classList.add('colors__textContainer--active')
+
+    this.$text.forEach( element => {
+      element.style.color = this.colors[this.index]
+    })
 
     this.$diamond.style.borderColor = this.colors[this.index]
 

@@ -3,16 +3,16 @@
   height: 100vh;
 
   &__imageContainer{
-    height: 53%;
     position: relative;
     margin-top: 5%;
     overflow: hidden;
+    height: 53%;
   }
 
   &__image{
-      max-height: 100%;
       position: absolute;
       left: -35%;
+      max-height: 100%;
 
       @include responsive($xs){
         left: -15%;
@@ -28,8 +28,8 @@
   }
 
   &__descriptionContainer{
-    height: 100%;
     padding: $container-layout;
+    height: 100%;
   }
 
   &__titling{
@@ -42,12 +42,12 @@
     }
 
     p{
-      font-size: $p;
-      color: $white;
       margin-top: 14px;
       max-width: 77%;
       font-family: 'Avenir-Roman', sans-serif;
       line-height: 1.15rem;
+      font-size: $p;
+      color: $white;
     }
 
   }
@@ -57,14 +57,14 @@
   }
 
   &__title{
-    color: $aluminium;
     margin-bottom: 11px;
+    color: $aluminium;
     font-family: 'Avenir', sans-serif;
     font-size: 0.875rem;
   }
 
   &__info{
-    color: $white;
     float: right;
+    color: $white;
   }
 }

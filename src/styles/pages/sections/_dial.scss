@@ -1,14 +1,14 @@
 .dial{
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 
   &__background{
-    background-image: url('../img/cadran.png');
     position: absolute;
     height: 100%;
     width: 100%;
+    background-image: url('../img/cadran.png');
     background-position: center;
     background-size: cover;
     opacity: 0.6;
@@ -30,10 +30,10 @@
     }
 
     p{
-      font-size: $p;
-      color: $white;
       margin-top: 20px;
       max-width: 77%;
+      font-size: $p;
+      color: $white;
       font-family: 'Avenir-Roman', sans-serif;
       line-height: 1.15rem;
     }

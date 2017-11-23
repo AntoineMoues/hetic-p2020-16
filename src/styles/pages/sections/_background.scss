@@ -1,11 +1,11 @@
 .background{
-  height: 100vh;
-  width: 100vw;
   position: fixed;
   z-index: 0;
+  height: 100vh;
+  width: 100vw;
+
 
   &__vertical{
-    transition: $transition;
     position: absolute;
     top: 0;
     width: 1px;
@@ -13,6 +13,7 @@
     background-color: $mikado;
     transform: translateY(-100%);
     animation: vertical-line 0.3s ease forwards;
+    transition: $transition;
 
     &1{
       @include leftPer(27)
@@ -41,13 +42,13 @@
   }
 
   &__diagonal{
-    transition: $transition;
     position: absolute;
     height: 1px;
     width: 0vw;
     background-color: $mikado;
     transform-origin: left;
     animation: diagonal-line 0.5s ease forwards;
+    transition: $transition;
 
     &1{
       left: 0;
