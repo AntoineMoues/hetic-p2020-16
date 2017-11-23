@@ -4,8 +4,9 @@
   "description": "[URL](https://antoinemoues.github.io/hetic-p2020-16/)",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "dev": "cd builder && gulp",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "install": "npm i && cd builder && npm i"
   },
   "repository": {
     "type": "git",

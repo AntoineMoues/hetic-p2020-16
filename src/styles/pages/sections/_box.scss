@@ -32,24 +32,15 @@
     height: 100%;
   }
 
-  &__titling{
+  &__headTitle{
 
-    h2{
-
-      &:after{
-        top: 120%;
-      }
+    &:after{
+      top: 120%;
     }
+  }
 
-    p{
-      margin-top: 14px;
-      max-width: 77%;
-      font-family: 'Avenir-Roman', sans-serif;
-      line-height: 1.5;
-      font-size: $p;
-      color: $white;
-    }
-
+  &__headDescription{
+    margin-top: 14px;
   }
 
   &__listing{

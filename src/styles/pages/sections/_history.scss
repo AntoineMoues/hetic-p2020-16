@@ -25,20 +25,15 @@
 
   &__descriptionContainer{
     padding: $container-layout;
+  }
 
-    h2{
+  &__headDescription{
+    margin-top: 20px;
+  }
 
-      &:after{
-        top: 140%;
-      }
-    }
-
-    p{
-      margin-top: 20px;
-      font-size: $p;
-      color: $white;
-      font-family: 'Avenir-Roman', sans-serif;
-      line-height: 1.15rem;
+  &__headTitle{
+    &:after{
+      top: 140%;
     }
   }
 
