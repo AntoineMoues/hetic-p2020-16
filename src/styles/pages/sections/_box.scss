@@ -2,29 +2,34 @@
   width: 100vw;
   height: 100vh;
 
+  &__imageContainer{
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden;
+    height: 53%;
+  }
+
   &__image{
-
-    &-container{
-      height: 53%;
-      position: relative;
-      margin-top: 5%;
-      overflow: hidden;
-    }
-
-    &-content{
-      max-height: 100%;
       position: absolute;
       left: -35%;
-    }
+      max-height: 100%;
+
+      @include responsive($xs){
+        left: -15%;
+      }
+
+      @include responsive($sm){
+        left: 0;
+      }
   }
 
   &__description{
     height: 42%;
+  }
 
-    &-container{
-      height: 100%;
-      padding: $container-layout;
-    }
+  &__descriptionContainer{
+    padding: $container-layout;
+    height: 100%;
   }
 
   &__titling{
@@ -37,29 +42,29 @@
     }
 
     p{
-      font-size: 0.75rem;
-      color: $white;
       margin-top: 14px;
       max-width: 77%;
       font-family: 'Avenir-Roman', sans-serif;
       line-height: 1.15rem;
+      font-size: $p;
+      color: $white;
     }
 
   }
 
   &__listing{
     margin-top: 20%;
+  }
 
-    &-title{
-      color: $aluminium;
-      margin-bottom: 11px;
-      font-family: 'Avenir', sans-serif;
-      font-size: 0.875rem;
-    }
+  &__title{
+    margin-bottom: 11px;
+    color: $aluminium;
+    font-family: 'Avenir', sans-serif;
+    font-size: 0.875rem;
+  }
 
-    &-info{
-      color: $white;
-      float: right;
-    }
+  &__info{
+    float: right;
+    color: $white;
   }
 }

@@ -7,22 +7,22 @@
 }
 @mixin responsive($point) {
   @if $point == $xl {
-    @media (max-width: $xl) { @content ; }
+    @media (min-width: $xl) { @content ; }
   }
 
   @else if $point == $lg {
-    @media (max-width: $lg) { @content ; }
+    @media (min-width: $lg) { @content ; }
   }
 
   @else if $point == $md {
-    @media (max-width: $md) { @content ; }
+    @media (min-width: $md) { @content ; }
   }
 
   @else if $point == $sm {
-    @media (max-width: $sm)  { @content ; }
+    @media (min-width: $sm)  { @content ; }
   }
 
   @else if $point == $xs {
-    @media (max-width: $xs)  { @content ; }
+    @media (min-width: $xs)  { @content ; }
   }
 }
