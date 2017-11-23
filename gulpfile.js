@@ -13,7 +13,7 @@ const gulp = require('gulp'),
             gulp_browsersync = require('browser-sync').create(),
 
 
-        // CSS
+            // CSS
             gulp_sass  = require('gulp-sass'),
             gulp_autoprefixer  = require('gulp-autoprefixer'),
             gulp_cssnano  = require('gulp-cssnano'),
@@ -41,9 +41,9 @@ const gulp = require('gulp'),
 
   // CONFIG
   const config = {
-      dist:'../dist/',
-      src:'../src/',
-      assets:'../dist/assets/'
+      dist:'dist/',
+      src:'src/',
+      assets:'dist/assets/'
   }
 
   // GULP
@@ -69,14 +69,14 @@ const gulp = require('gulp'),
 function browsersync() {
   gulp_browsersync.init({
         server: {
-            baseDir: '../dist/'
+            baseDir: 'dist/'
         }
     });
 }
 
 // CLEAN DIST
 function clean() {
-    return gulp.src('../dist/', {read: false})
+    return gulp.src('dist/', {read: false})
         .pipe(gulp_clean({force:true}))
 }
 
