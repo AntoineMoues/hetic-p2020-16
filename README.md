@@ -12,9 +12,9 @@ Come visit website [here](https://antoinemoues.github.io/hetic-p2020-16/)
 
 ## Requirements
 
-- Node.js
-- Gulp 4.0
-- npm
+- Node.js v6.11.1
+- Gulp v4.0
+- npm v3.10.10
 
 ## Installation
 

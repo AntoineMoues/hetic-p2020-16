@@ -60,7 +60,7 @@ const gulp = require('gulp'),
   // WATCH FILES CHANGE
   function watch() {
       gulp.watch(config.src+'styles/**/*.scss', gulp.series(sass));
-      gulp.watch(config.src+'js/**/*.js', gulp.series(js,gulp_reload));
+      gulp.watch(config.src+'js/**/*.js', gulp.series(js));
       gulp.watch(config.src+'views/**/**.html', gulp.series(html,gulp_reload));
       gulp.watch(config.src+'templates/**/*.pug', gulp.series(pug, gulp_reload));
   };
@@ -149,7 +149,8 @@ function clean() {
         .pipe(gulp_sourcemaps.write())
         .pipe(gulp_rename('main.min.js'))
         .pipe(gulp.dest(config.assets+'js/'))
-        .pipe(gulp_notify('JS compiled'));
+        .pipe(gulp_notify('JS compiled'))
+        .pipe(gulp_browsersync.stream());
   }
 
   function critical() {
