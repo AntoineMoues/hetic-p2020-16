@@ -12,15 +12,29 @@
     background-position: center;
     background-size: cover;
     opacity: 0.6;
+
+    @include responsive($lg) {
+      height: 80%;
+      width: 80%;
+      left: calc(50% - 80% / 2);
+    }
   }
 
   &__description{
     margin-top: auto;
     margin-bottom: 20%;
+
+    @include responsive($lg) {
+      margin: 0;
+    }
   }
 
   &__descriptionContainer{
     padding: $container-layout;
+
+    @include responsive($lg) {
+      padding: $desktop-layout;
+    }
   }
 
   &__headTitle{
