@@ -6,36 +6,37 @@
   overflow: hidden;
 
   &__title{
-    margin-top: 18%;
+    margin-top: 18vh;
     margin-left: 15%;
     max-width: 57%;
     font-size: $h1;
     color: $white;
     animation: appearing-up 1.3s 0s ease;
+
+    @include responsive($lg){
+      max-width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   &__imageContainer{
     overflow: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &__image{
-    position: absolute;
-    left: -19%;
-    margin-top: 20px;
-    max-height: 46%;
-    max-width: 150%;
+    max-height: 46vh;
+    max-width: 150vw;
     opacity: 0;
     animation: appearing-no-transform 1.3s 2.3s ease;
     animation-fill-mode: forwards;
 
-    @include responsive($xs){
-      max-height: 61%;
-      left: -19%;
-    }
-
-    @include responsive($sm){
-      max-height: 51%;
-      left: 4%;
+    @include responsive($lg){
+      max-height: 60vh;
+      max-width: 80vw;
     }
   }
 
@@ -51,5 +52,9 @@
     opacity: 0;
     animation: appearing-down 1.3s 1.3s ease;
     animation-fill-mode: forwards;
+
+    @include responsive($lg){
+      display: none;
+    }
   }
 }

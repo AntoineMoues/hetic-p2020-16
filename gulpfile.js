@@ -24,6 +24,7 @@ const gulp = require('gulp'),
             buffer = require('vinyl-buffer'),
             source = require('vinyl-source-stream'),
             es2015 = require('babel-preset-es2015'),
+            eslint = require('gulp-eslint'),
             gulp_uglify = require('gulp-uglify'),
 
             // HTML
@@ -50,6 +51,10 @@ const gulp = require('gulp'),
   gulp.task('default', gulp.series(clean, gulp.parallel(browsersync,fonts,sass,js,images,pug,watch), () => {
 
   }));
+
+  gulp.task('lint', gulp.series(lint), () => {
+
+  })
 
 
   function gulp_reload(done) {
@@ -137,20 +142,27 @@ function clean() {
         .pipe(gulp_notify('Pages has been updated'));
     }
 
-    function js() {
-     return (browserify(config.src+'js/main.js', { debug: true }).transform(babelify, {presets:[es2015]}).bundle())
-        .on('error', gulp_notify.onError(function (error) {
-            return "Message to the notifier: " + error.message;
-        }))
-        .pipe(source('main.js'))
-        .pipe(buffer())
-        .pipe(gulp_sourcemaps.init())
-        .pipe(gulp_uglify())
-        .pipe(gulp_sourcemaps.write())
-        .pipe(gulp_rename('main.min.js'))
-        .pipe(gulp.dest(config.assets+'js/'))
-        .pipe(gulp_notify('JS compiled'))
-        .pipe(gulp_browsersync.stream());
+  function js() {
+   return (browserify(config.src+'js/main.js', { debug: true }).transform(babelify, {presets:[es2015]}).bundle())
+      .on('error', gulp_notify.onError(function (error) {
+          return "Message to the notifier: " + error.message;
+      }))
+      .pipe(source('main.js'))
+      .pipe(buffer())
+      .pipe(gulp_sourcemaps.init())
+      .pipe(gulp_uglify())
+      .pipe(gulp_sourcemaps.write())
+      .pipe(gulp_rename('main.min.js'))
+      .pipe(gulp.dest(config.assets+'js/'))
+      .pipe(gulp_notify('JS compiled'))
+      .pipe(gulp_browsersync.stream());
+  }
+
+  function lint() {
+    return gulp.src(['**/*.js','!node_modules/**'])
+       .pipe(eslint({fix: true}))
+       .pipe(eslint.format())
+       .pipe(eslint.failAfterError());
   }
 
   function critical() {
