@@ -55,6 +55,10 @@
       @include topPer(91)
       transform: rotate(45deg);
       animation-delay: 2s;
+
+      @include responsive($lg){
+        transform: rotate(20deg);
+      }
     }
 
     &2{
@@ -62,6 +66,10 @@
       @include topPer(91)
       transform: rotate(135deg);
       animation-delay: 2s;
+
+      @include responsive($lg){
+        transform: rotate(160deg);
+      }
     }
   }
 
@@ -80,6 +88,12 @@
       width: 68vw;
       height: 68vw;
       animation-delay: 1.5s;
+
+      @include responsive($lg){
+        @include centerCircle(38vh);
+        width: 38vh;
+        height: 38vh;
+      }
     }
 
     &2{
@@ -88,6 +102,12 @@
       width: 85vw;
       height: 85vw;
       animation-delay: 1.5s;
+
+      @include responsive($lg){
+        @include centerCircle(68vh);
+        width: 68vh;
+        height: 68vh;
+      }
     }
 
     &3{
@@ -96,6 +116,12 @@
       width: 91vw;
       height: 91vw;
       animation-delay: 1.5s;
+
+      @include responsive($lg){
+        @include centerCircle(75vh);
+        width: 75vh;
+        height: 75vh;
+      }
     }
   }
 }

@@ -2,11 +2,22 @@
   width: 100vw;
   height: 100vh;
 
+  @include responsive($lg){
+    display: flex;
+    flex-direction: column;
+  }
+
   &__imageContainer{
     position: relative;
     margin-top: 5%;
     overflow: hidden;
     height: 53%;
+
+    @include responsive($lg){
+      display: flex;
+      justify-content: center;
+      order: 2;
+    }
   }
 
   &__image{
@@ -21,6 +32,10 @@
       @include responsive($sm){
         left: 0;
       }
+
+      @include responsive($lg){
+        position: relative;
+      }
   }
 
   &__description{
@@ -30,6 +45,10 @@
   &__descriptionContainer{
     padding: $container-layout;
     height: 100%;
+
+    @include responsive($lg){
+      padding: $desktop-layout;
+    }
   }
 
   &__headTitle{
@@ -41,10 +60,21 @@
 
   &__headDescription{
     margin-top: 14px;
+
+    @include responsive($lg){
+      max-width: 100%;
+    }
   }
 
   &__listing{
     margin-top: 20%;
+    padding: $container-layout;
+
+    @include responsive($lg){
+      margin-top: 0;
+      order: 3;
+      padding: $desktop-layout;
+    }
   }
 
   &__title{
@@ -52,6 +82,15 @@
     color: $aluminium;
     font-family: 'Avenir', sans-serif;
     font-size: 0.875rem;
+  }
+
+  &__titling{
+    padding: $container-layout;
+
+    @include responsive($lg){
+      padding: $desktop-layout;
+      order: 1;
+    }
   }
 
   &__info{

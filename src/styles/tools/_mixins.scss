@@ -77,3 +77,8 @@ $xl: 1400px;
 		src: $src;
 	}
 }
+
+@mixin centerCircle($value){
+  top: calc(50% - #{$value}/2);
+  left: calc(50% - #{$value}/2);
+}
