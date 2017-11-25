@@ -36,13 +36,13 @@ const slider = new Carousel({
 })
 
 
-if (window.DeviceOrientationEvent) {
-  /**
-   * @const
-   * @name moving
-   * @instance Orientation
-   */
-  const moving = new Orientation({
-    $element : document.querySelector('.push__image')
-  })
-}
+// if (window.DeviceOrientationEvent) {
+//   /**
+//    * @const
+//    * @name moving
+//    * @instance Orientation
+//    */
+//   const moving = new Orientation({
+//     $element : document.querySelector('.push__image')
+//   })
+// }
