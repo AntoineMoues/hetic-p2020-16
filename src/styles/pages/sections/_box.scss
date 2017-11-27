@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
 
-  @include responsive($lg){
+  @include responsive($md){
     display: flex;
     flex-direction: column;
   }
@@ -13,7 +13,7 @@
     overflow: hidden;
     height: 53%;
 
-    @include responsive($lg){
+    @include responsive($md){
       display: flex;
       justify-content: center;
       order: 2;
@@ -33,7 +33,7 @@
         left: 0;
       }
 
-      @include responsive($lg){
+      @include responsive($md){
         position: relative;
       }
   }
@@ -46,7 +46,7 @@
     padding: $container-layout;
     height: 100%;
 
-    @include responsive($lg){
+    @include responsive($md){
       padding: $desktop-layout;
     }
   }
@@ -61,7 +61,7 @@
   &__headDescription{
     margin-top: 14px;
 
-    @include responsive($lg){
+    @include responsive($md){
       max-width: 100%;
     }
   }
@@ -70,7 +70,7 @@
     margin-top: 20%;
     padding: $container-layout;
 
-    @include responsive($lg){
+    @include responsive($md){
       margin-top: 0;
       order: 3;
       padding: $desktop-layout;
@@ -87,7 +87,7 @@
   &__titling{
     padding: $container-layout;
 
-    @include responsive($lg){
+    @include responsive($md){
       padding: $desktop-layout;
       order: 1;
     }

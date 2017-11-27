@@ -13,7 +13,7 @@
     color: $white;
     animation: appearing-up 1.3s 0s ease;
 
-    @include responsive($lg){
+    @include responsive($md){
       max-width: 100%;
       margin-left: 0;
       text-align: center;
@@ -34,7 +34,7 @@
     animation: appearing-no-transform 1.3s 2.3s ease;
     animation-fill-mode: forwards;
 
-    @include responsive($lg){
+    @include responsive($md){
       max-height: 60vh;
       max-width: 80vw;
     }
@@ -53,7 +53,7 @@
     animation: appearing-down 1.3s 1.3s ease;
     animation-fill-mode: forwards;
 
-    @include responsive($lg){
+    @include responsive($md){
       display: none;
     }
   }
