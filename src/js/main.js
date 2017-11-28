@@ -1,7 +1,7 @@
-const ScrollAppearing = require('./components/scrollappearing')
-const Appear = require('./components/appear')
-const Carousel = require('./components/carousel')
-const Orientation = require('./components/orientation')
+import ScrollAppearing from './components/scrollappearing'
+import Appear from './components/appear'
+import Carousel from './components/carousel'
+import Orientation from './components/orientation'
 
 
 /**

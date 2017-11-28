@@ -26,7 +26,7 @@
     "browserify": "^14.4.0",
     "browsersync": "0.0.1-security",
     "critical": "^1.0.0",
-    "eslint": "^4.11.0",
+    "eslint": "^2.13.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
@@ -48,6 +48,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "ajv": "^5.5.0",
+    "babel-preset-env": "^1.6.1",
     "gulp-eslint": "^4.0.0",
     "hammerjs": "^2.0.8"
   }

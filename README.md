@@ -29,7 +29,7 @@ cd hetic-p2020-16
 npm run install
 ```
 
-## Modify the project 🛠
+## Running the project 🛠
 
 ```
 npm run dev
@@ -45,11 +45,11 @@ npm run deploy
 
 ## Team 👥
 
-- Emile Abraham
+- [Emile Abraham](https://twitter.com/Emile_Abraham)
 - Aymerick Hoareau
 - Charles Morey
-- Antoine Mouës
-- Paul Perrier
+- [Antoine Mouës](https://github.com/AntoineMoues)
+- [Paul Perrier](https://twitter.com/P__Perrier)
 - Charlotte Siess
 
 ## Documentation 📝
