@@ -43,7 +43,7 @@ const slider = new Carousel({
  * @instance Music
  */
 const audio = new Music({
-  link: './assets/sounds/background.mp3',
+  link: '../../assets/sounds/background.mp3',
   $el: document.querySelector('.audio__button'),
   $icon: document.querySelector('.audio__icon')
 })
@@ -56,7 +56,7 @@ const loader = Bodymovin.loadAnimation({
   container: document.querySelector('.loader'),
   renderer: 'svg',
   autoplay: true,
-  path: './assets/data/loader.json'
+  path: '../../assets/data/loader.json'
 })
 
 window.onload = () => {
