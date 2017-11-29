@@ -35,6 +35,11 @@ class Music {
 
   }
 
+  /**
+   * Do action needed when mute or unmute is needed
+   * @function
+   * @name mute
+   */
   mute() {
     if(this.state == true){
       this.params.$icon.src = '/assets/img/cross.png'

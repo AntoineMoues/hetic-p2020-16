@@ -14,7 +14,8 @@ class Carousel {
   /**
    * Declares all parameters. Listen to clicks and hammer pans.
    * @constructor
-   * @param {object} params - Contains 1 parameter : $container, {element}, container to observ
+   * @param {object} params - Contains 1 parameter container to observ
+   * @param {element} $container - container to observ
    */
   constructor (params) {
     this.index = 0

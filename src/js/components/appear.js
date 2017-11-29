@@ -1,5 +1,5 @@
 /**
- * Class allowing appering and disappearing on elements
+ * Class allowing appearing and disappearing on elements
  * @class
  */
 class Appear{
@@ -7,7 +7,10 @@ class Appear{
   /**
    * @constructor
    * Listening to scroll, launches class adds.
-   * @param {object} params - Contains 3 parameters : $container, {element}, container to observ ; $animate, {element}, element to animate ; animation, {string}, name of the class to add on trigger
+   * @param {object} params - Contains 3 parameters
+   * @param {element} $container - container to observ
+   * @param {element} $animate - element to animate
+   * @param {string} animation - name of the class to add on trigger
    */
   constructor (params) {
     window.addEventListener('scroll', () => {
