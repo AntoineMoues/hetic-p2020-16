@@ -42,13 +42,13 @@ class Music {
    */
   mute() {
     if(this.state == true){
-      this.params.$icon.src = '/assets/img/cross.png'
+      this.params.$icon.src = 'assets/img/cross.png'
       this.audio.pause()
       this.audio.volume = 0
       this.state = false
       localStorage.setItem('audio', this.state)
     } else {
-      this.params.$icon.src = '/assets/img/sound.gif'
+      this.params.$icon.src = 'assets/img/sound.gif'
       this.audio.play()
       this.audio.volume = 1
       this.state = true

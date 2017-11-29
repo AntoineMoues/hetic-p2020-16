@@ -56,7 +56,7 @@ const loader = Bodymovin.loadAnimation({
   container: document.querySelector('.loader'),
   renderer: 'svg',
   autoplay: true,
-  path: '/assets/data/loader.json'
+  path: 'assets/data/loader.json'
 })
 
 window.onload = () => {
