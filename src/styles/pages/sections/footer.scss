@@ -1,0 +1,16 @@
+.footer{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+
+  &__title{
+    color: $teak;
+    font-size: 4rem;
+    text-decoration: none;
+    font-family: 'PlayFair Display', sans-serif;
+  }
+}
