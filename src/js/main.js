@@ -43,7 +43,7 @@ const slider = new Carousel({
  * @instance Music
  */
 const audio = new Music({
-  link: '/assets/sounds/background.mp3',
+  link: 'assets/sounds/background.mp3',
   $el: document.querySelector('.audio__button'),
   $icon: document.querySelector('.audio__icon')
 })
