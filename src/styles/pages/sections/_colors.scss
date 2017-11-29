@@ -68,6 +68,17 @@
     position: relative;
     margin-top: 19vh;
     height: 30vh;
+    cursor: grab;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    &:active{
+      cursor: grabbing;
+    }
 
     @include responsive($md) {
       margin-top: 0;
@@ -78,6 +89,12 @@
     position: absolute;
     left: 29.5%;
     height: 55vw;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     @include responsive($md){
       height: 35vw;
