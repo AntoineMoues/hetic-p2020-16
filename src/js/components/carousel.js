@@ -117,7 +117,7 @@ class Carousel {
    * @name check
    */
   check() {
-    if (this.$container.getBoundingClientRect().y < 70 && this.$container.getBoundingClientRect().y > - this.$container.getBoundingClientRect().height + 300) {
+    if (this.$container.getBoundingClientRect().y < 190 && this.$container.getBoundingClientRect().y > - this.$container.getBoundingClientRect().height + 300) {
       this.$backgroundDivs.forEach( element => {
         element.style.backgroundColor = this.backgroundColors[this.index]
       })

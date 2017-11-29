@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+section{
+  margin-top: 200px;
+}
+
 .opacity{
   opacity: 0;
   transition: $transition;

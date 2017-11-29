@@ -105,9 +105,11 @@
 
   &__imageContainer{
     opacity: 0;
+    transition: $transition;
 
     &--active{
       opacity: 1;
+      transition: $transition;
     }
   }
 
@@ -124,6 +126,11 @@
     @include responsive($xs){
       margin-top: 13vh;
     }
+
+    @include responsive($md){
+      width: 6vw;
+      height: 6vw;
+    }
   }
 
   &__number{
@@ -135,13 +142,9 @@
     font-size: 1.125rem;
     font-family: 'Avenir', sans-serif;
 
-
-    @include responsive($xs){
-      margin: 4vw 9vw;
-    }
-
     @include responsive($md){
-      font-size: 3.125rem;
+      font-size: 2.125rem;
+      margin: 1.75vw 3.5vw;
     }
   }
 

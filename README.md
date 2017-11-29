@@ -46,11 +46,11 @@ npm run deploy
 ## Team 👥
 
 - [Emile Abraham](https://twitter.com/Emile_Abraham)
-- Aymerick Hoareau
-- Charles Morey
+- [Aymerick Hoareau](https://fr.linkedin.com/in/aymerick-hoareau)
+- [Charles Morey](https://dribbble.com/CharlyMatou)
 - [Antoine Mouës](https://github.com/AntoineMoues)
 - [Paul Perrier](https://twitter.com/P__Perrier)
-- Charlotte Siess
+- [Charlotte Siess]()
 
 ## Documentation 📝
 
