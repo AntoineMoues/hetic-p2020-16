@@ -50,7 +50,7 @@ npm run deploy
 - [Charles Morey](https://dribbble.com/CharlyMatou)
 - [Antoine Mouës](https://github.com/AntoineMoues)
 - [Paul Perrier](https://twitter.com/P__Perrier)
-- [Charlotte Siess](https://www.linkedin.com/in/charlotte-sieess-275882a7/)
+- [Charlotte Sieess](https://www.linkedin.com/in/charlotte-sieess-275882a7/)
 
 ## Documentation 📝
 
