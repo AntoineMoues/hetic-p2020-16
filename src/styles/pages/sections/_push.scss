@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
 
-  @include responsive($lg) {
+  @include responsive($md) {
     display: flex;
     flex-direction: column;
   }
@@ -10,7 +10,7 @@
   &__imageContainer{
     padding-top: 22vh;
 
-    @include responsive($lg) {
+    @include responsive($md) {
       position: relative;
       order: 2;
       padding: 0;
@@ -20,7 +20,7 @@
   &__image{
     width: 100%;
 
-    @include responsive($lg) {
+    @include responsive($md) {
       position: absolute;
       width: 70%;
       left: calc(50% - 70%/2);
@@ -30,7 +30,7 @@
   &__descriptionContainer{
     padding: $container-layout;
 
-    @include responsive($lg) {
+    @include responsive($md) {
       padding: $desktop-layout;
     }
   }

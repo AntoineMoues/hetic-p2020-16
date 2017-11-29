@@ -58,25 +58,58 @@
       height: 1px;
       background-color: $white;
     }
+
+    @include responsive($md) {
+      display: none;
+    }
   }
 
   &__images{
     position: relative;
     margin-top: 19vh;
     height: 30vh;
+    cursor: grab;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    &:active{
+      cursor: grabbing;
+    }
+
+    @include responsive($md) {
+      margin-top: 0;
+    }
   }
 
   &__image{
     position: absolute;
     left: 29.5%;
     height: 55vw;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    @include responsive($md){
+      height: 35vw;
+      width: 26vw;
+      left: calc(50% - 26vw / 2);
+    }
   }
 
   &__imageContainer{
     opacity: 0;
+    transition: $transition;
 
     &--active{
       opacity: 1;
+      transition: $transition;
     }
   }
 
@@ -93,6 +126,11 @@
     @include responsive($xs){
       margin-top: 13vh;
     }
+
+    @include responsive($md){
+      width: 6vw;
+      height: 6vw;
+    }
   }
 
   &__number{
@@ -104,9 +142,9 @@
     font-size: 1.125rem;
     font-family: 'Avenir', sans-serif;
 
-
-    @include responsive($xs){
-      margin: 4vw 9vw;
+    @include responsive($md){
+      font-size: 2.125rem;
+      margin: 1.75vw 3.5vw;
     }
   }
 
@@ -138,6 +176,12 @@
       height: 100%;
       background: linear-gradient(0deg, rgba(0,0,0,0.9), transparent);
     }
+
+    @include responsive($md){
+      top: -200%;
+      max-width: 420px;
+      padding-right: 0;
+    }
   }
 
   &__wrapper{
@@ -153,6 +197,7 @@
     font-family: 'Playfair Display';
     font-weight: 700;
     transition: $transition;
+    display: inline-block;
   }
 }
 

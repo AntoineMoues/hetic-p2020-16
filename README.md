@@ -29,7 +29,7 @@ cd hetic-p2020-16
 npm run install
 ```
 
-## Modify the project 🛠
+## Running the project 🛠
 
 ```
 npm run dev
@@ -45,12 +45,12 @@ npm run deploy
 
 ## Team 👥
 
-- Emile Abraham
-- Aymerick Hoareau
-- Charles Morey
-- Antoine Mouës
-- Paul Perrier
-- Charlotte Siess
+- [Emile Abraham](https://twitter.com/Emile_Abraham)
+- [Aymerick Hoareau](https://fr.linkedin.com/in/aymerick-hoareau)
+- [Charles Morey](https://dribbble.com/CharlyMatou)
+- [Antoine Mouës](https://github.com/AntoineMoues)
+- [Paul Perrier](https://twitter.com/P__Perrier)
+- [Charlotte Siess](https://www.linkedin.com/in/charlotte-sieess-275882a7/)
 
 ## Documentation 📝
 
@@ -62,3 +62,12 @@ npm run deploy
   - Naming convention : [BEM : Block Element Modifier](http://getbem.com/)
 - JS
   - Javascript standard style : [Standard JS](https://standardjs.com/)
+
+### Javascript Classes
+
+You can find every information on components created in `docs/{classname}.md`
+
+- [Appear](docs/Appear.md)
+- [Carousel](docs/Carousel.md)
+- [Music](docs/Music.md)
+- [ScrollAppearing](docs/ScrollAppearing.md) 

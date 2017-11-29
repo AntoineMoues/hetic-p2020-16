@@ -48,7 +48,7 @@ const gulp = require('gulp'),
   }
 
   // GULP
-  gulp.task('default', gulp.series(clean, gulp.parallel(browsersync,fonts,sass,js,images,pug,watch), () => {
+  gulp.task('default', gulp.series(clean, gulp.parallel(browsersync,fonts,sass,js,images,pug,sounds,watch, data), () => {
 
   }));
 
@@ -175,4 +175,16 @@ function clean() {
         width: 320,
         height: 480
     })
+  }
+
+  function sounds() {
+    gulp.src(config.src+'sounds/**')
+        .pipe(gulp_imagemin())
+        .pipe(gulp.dest(config.assets+'sounds'))
+  }
+
+  function data() {
+    gulp.src(config.src+'data/**')
+        .pipe(gulp_imagemin())
+        .pipe(gulp.dest(config.assets+'data'))
   }

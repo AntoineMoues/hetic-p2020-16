@@ -7,7 +7,9 @@ class ScrollAppearing {
   /**
    * @constructor
    * Declares all parameters. Inits system.
-   * @param {object} params - Contains 2 parameters : hidden, {string}, CSS class which will be removed; appeared, {string}, CSS which will be added;
+   * @param {object} params - Contains 2 parameters
+   * @param {string} hidden - CSS class which will be removed
+   * @param {string} appeared - CSS which will be added
    */
   constructor (params) {
     this.params = params
